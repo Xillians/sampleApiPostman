@@ -55,8 +55,38 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/HelloResponse'
-  /newEndpoint:
-    get:
+  /operations:
+    patch:
+      description: Returns 'I am here!' to the authenticated caller
+      tags: 
+        - greeting
+      operationId: newEndpoint
+      security: 
+        - bearerAuth: []
+      "responses":
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HelloResponse'
+    patch:
+      summary: operation 1
+      description: Returns 'I am here!' to the authenticated caller
+      tags: 
+        - greeting
+      operationId: newEndpoint
+      security: 
+        - bearerAuth: []
+      "responses":
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HelloResponse'
+    patch:
+      summary: operation 2
       description: Returns 'I am here!' to the authenticated caller
       tags: 
         - greeting
