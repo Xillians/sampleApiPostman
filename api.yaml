@@ -61,7 +61,7 @@ paths:
       description: Returns 'I am here!' to the authenticated caller
       tags: 
         - greeting
-      operationId: operation1
+      operationId: updateUser
       security: 
         - bearerAuth: []
       "responses":
@@ -76,7 +76,7 @@ paths:
       description: Returns 'I am here!' to the authenticated caller
       tags: 
         - greeting
-      operationId: operation2
+      operationId: fetchUser
       security: 
         - bearerAuth: []
       "responses":
@@ -91,7 +91,7 @@ paths:
       description: Returns 'I am here!' to the authenticated caller
       tags: 
         - greeting
-      operationId: operation2
+      operationId: createUser
       security: 
         - bearerAuth: []
       "responses":
@@ -106,7 +106,7 @@ paths:
       description: Returns 'I am here!' to the authenticated caller
       tags: 
         - greeting
-      operationId: operation2
+      operationId: deleteUser
       security: 
         - bearerAuth: []
       "responses":
