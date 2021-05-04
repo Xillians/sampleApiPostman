@@ -55,7 +55,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/HelloResponse'
-  /operations:
+  /users/{id}:
     patch:
       summary: operation 1
       description: Returns 'I am here!' to the authenticated caller
