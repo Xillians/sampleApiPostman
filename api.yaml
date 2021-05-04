@@ -60,7 +60,7 @@ paths:
       description: Returns 'I am here!' to the authenticated caller
       tags: 
         - greeting
-      operationId: newEndpoint
+      operationId: operation1
       security: 
         - bearerAuth: []
       "responses":
@@ -70,27 +70,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/HelloResponse'
-    patch:
+    get:
       summary: operation 1
       description: Returns 'I am here!' to the authenticated caller
       tags: 
         - greeting
-      operationId: newEndpoint3
-      security: 
-        - bearerAuth: []
-      "responses":
-        "200":
-          description: Success
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/HelloResponse'
-    patch:
-      summary: operation 2
-      description: Returns 'I am here!' to the authenticated caller
-      tags: 
-        - greeting
-      operationId: newEndpoint
+      operationId: operation2
       security: 
         - bearerAuth: []
       "responses":
