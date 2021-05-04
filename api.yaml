@@ -75,7 +75,7 @@ paths:
       description: Returns 'I am here!' to the authenticated caller
       tags: 
         - greeting
-      operationId: newEndpoint
+      operationId: newEndpoint3
       security: 
         - bearerAuth: []
       "responses":
