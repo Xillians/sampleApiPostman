@@ -28,7 +28,7 @@ paths:
       operationId: hello
       parameters:
       - name: name
-        required: true
+        required: false
         in: query
         description: The name of a caller
         schema:
