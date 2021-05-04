@@ -55,13 +55,20 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/HelloResponse'
-  /users/:id:
+  /users/{id}:
     patch:
       summary: update user
       description: Returns 'I am here!' to the authenticated caller
       tags: 
         - greeting
       operationId: updateUser
+      parameters:
+      - name: id
+        required: false
+        in: query
+        description: id of user
+        schema:
+          type: string
       security: 
         - bearerAuth: []
       "responses":
