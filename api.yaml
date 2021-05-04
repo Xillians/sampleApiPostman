@@ -43,7 +43,6 @@ paths:
   /goodbye:
     get:
       description: Returns 'Goodbye \<name\>!!!' to the authenticated caller
-      deprecated: true
       tags: 
         - greeting
       operationId: goodbye
