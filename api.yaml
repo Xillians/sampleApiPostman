@@ -8,7 +8,7 @@ info:
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
-  version: 1.0.3
+  version: 1.0.4
 externalDocs:
   description: Find out more about Swagger
   url: http://swagger.io
@@ -46,6 +46,21 @@ paths:
       tags: 
         - greeting
       operationId: goodbye
+      security: 
+        - bearerAuth: []
+      "responses":
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HelloResponse'
+  /newEndpoint:
+    get:
+      description: Returns 'I am here!' to the authenticated caller
+      tags: 
+        - greeting
+      operationId: newEndpoint
       security: 
         - bearerAuth: []
       "responses":
