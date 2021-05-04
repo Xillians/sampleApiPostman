@@ -144,6 +144,29 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/HelloResponse'
+  /operations:
+    patch:
+      description: Returns first operation result
+      summary: operation 1
+      tags: 
+        - greeting
+      operationId: operation 1
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Operation'
+            example:
+              operation: operation 1
+      security: 
+        - bearerAuth: []
+      "responses":
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HelloResponse'
 components:
   securitySchemes:
     bearerAuth:
@@ -157,4 +180,12 @@ components:
         - message
       properties:
         message:
+          type: string
+    Operation:
+      type: object
+      additionalProperties: false
+      required:
+        - operation
+      properties:
+        operation:
           type: string
