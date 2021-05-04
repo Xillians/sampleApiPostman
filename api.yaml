@@ -19,7 +19,7 @@ tags:
   - name: greeting
     description: Greeting APIs
  
-paths:0
+paths:
   /hello:
     get:
       description: Returns 'Hello <name>/stranger!!!' to the caller
