@@ -63,12 +63,12 @@ paths:
         - greeting
       operationId: updateUser
       parameters:
-      - name: id
-        required: false
-        in: query
-        description: id of user
-        schema:
-          type: string
+        - name: id
+          required: true
+          in: path
+          description: id of user
+          schema:
+            type: string
       security: 
         - bearerAuth: []
       "responses":
@@ -85,12 +85,12 @@ paths:
         - greeting
       operationId: fetchUser
       parameters:
-      - name: id
-        required: false
-        in: query
-        description: id of user
-        schema:
-          type: string
+        - name: id
+          required: true
+          in: path
+          description: id of user
+          schema:
+            type: string
       security: 
         - bearerAuth: []
       "responses":
@@ -107,12 +107,12 @@ paths:
         - greeting
       operationId: createUser
       parameters:
-      - name: id
-        required: false
-        in: query
-        description: id of user
-        schema:
-          type: string
+        - name: id
+          required: true
+          in: path
+          description: id of user
+          schema:
+            type: string
       security: 
         - bearerAuth: []
       "responses":
@@ -129,12 +129,12 @@ paths:
         - greeting
       operationId: deleteUser
       parameters:
-      - name: id
-        required: false
-        in: query
-        description: id of user
-        schema:
-          type: string
+        - name: id
+          required: true
+          in: path
+          description: id of user
+          schema:
+            type: string
       security: 
         - bearerAuth: []
       "responses":
